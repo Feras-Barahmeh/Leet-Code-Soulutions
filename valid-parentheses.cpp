@@ -1,7 +1,7 @@
 #include <iostream>
 #include<stack>
-
 #include<string>
+
 using namespace std;
 // https://leetcode.com/problems/valid-parentheses/
 
@@ -26,6 +26,7 @@ public :
 
             if ( ! IfLeftParenthesess(s[i]))
                 parenthesess.push(s[i]);
+
             else {
                 if ( IfLeftParenthesess(s[i]) ) {
                     if (parenthesess.empty())
@@ -41,8 +42,6 @@ public :
                         parenthesess.pop();
                 }
             }
-
-
         }
 
         if (parenthesess. empty()) {
@@ -54,13 +53,3 @@ public :
 
     }
 };
-
-
-int main() {
-    Solution obj;
-    cout << obj.isValid("[]]()") ;
-
-
-
-    return 0;
-}
