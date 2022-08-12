@@ -71,6 +71,27 @@ public:
     }
 };
 
+class Solution {
+    struct ListNode {
+        int val;
+        ListNode *next;
+    };
+public:
+    ListNode* deleteDuplicates(ListNode* head) {
+        ListNode * TempHead = head;
+        while (TempHead != nullptr && TempHead->next != nullptr) {
+            if (TempHead->next->val == TempHead->val) {
+                ListNode *ptr = TempHead->next;
+                TempHead->next = TempHead->next->next;
+                delete TempHead->next;
+            } else {
+                TempHead = TempHead->next;
+            }
+        }
+
+        return head;
+    }
+};
 
 int main() {
 
