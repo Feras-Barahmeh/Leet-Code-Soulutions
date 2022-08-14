@@ -12,11 +12,16 @@ class Solution {
         };
 public:
     bool hasCycle(ListNode *head) {
-        ListNode *ptr = head;
-        if (head == NULL) return false;
+        if(head==NULL) return false;
+        ListNode *ptr=head;
+        ListNode *pos =head;
 
-        while(ptr == NULL || ptr->next == NULL) {
-            if (ptr->next <= ptr ) return true;
-            ptr = ptr->next;
+        while(ptr && ptr->next)      {
+            ptr=ptr->next->next;
+            pos =pos->next;
+            if(ptr==pos) return true;
         }
+        return false;
+
+    }
 };
