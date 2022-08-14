@@ -93,8 +93,14 @@ public:
     }
 };
 
+struct  Node {
+     int val;
+     Node *next;
+};
+
 int main() {
-
-
+    Node *text;
+    text->val = 5;
+    cout << text->val << endl;
     return 0;
 }
