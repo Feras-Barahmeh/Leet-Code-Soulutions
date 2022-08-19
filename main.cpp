@@ -1,6 +1,7 @@
 #include <iostream>
 #include<string>
-
+#include<vector>
+#include <algorithm>
 using namespace std;
 
 class  LinkedList {
@@ -71,36 +72,30 @@ public:
     }
 };
 
+
+
 class Solution {
-    struct ListNode {
-        int val;
-        ListNode *next;
-    };
 public:
-    ListNode* deleteDuplicates(ListNode* head) {
-        ListNode * TempHead = head;
-        while (TempHead != nullptr && TempHead->next != nullptr) {
-            if (TempHead->next->val == TempHead->val) {
-                ListNode *ptr = TempHead->next;
-                TempHead->next = TempHead->next->next;
-                delete TempHead->next;
-            } else {
-                TempHead = TempHead->next;
+    int removeElement(vector<int>& nums, int val) {
+        int counter = 0 ;
+        for (int i = 0; i < nums.size(); i++) {
+            if (nums.at(i) == val) {
+                nums[i] = 101;
+                counter++;
             }
         }
-
-        return head;
+        sort(nums.begin(), nums.end());
+        return nums.size() - counter;
     }
 };
-
-struct  Node {
-     int val;
-     Node *next;
-};
-
 int main() {
-    Node *text;
-    text->val = 5;
-    cout << text->val << endl;
-    return 0;
+    Solution ob ;
+    vector< int> numbers;
+    numbers.push_back(2);
+    numbers.push_back(3);
+    numbers.push_back(5);
+    numbers.push_back(2);
+    numbers.push_back(2);
+    cout << ob.removeElement(numbers, 2) << endl;
+
 }
