@@ -1,7 +1,9 @@
 # ninja log v5
-3	343	6832250204490977	CMakeFiles/Problems_Leet_Code.dir/main.cpp.obj	dec7d25252915567
-344	431	6832250205329047	Problems_Leet_Code.exe	95364f8215614c75
-2	336	6832250356385079	CMakeFiles/Problems_Leet_Code.dir/main.cpp.obj	dec7d25252915567
-336	422	6832250357212927	Problems_Leet_Code.exe	95364f8215614c75
-3	333	6832250573748786	CMakeFiles/Problems_Leet_Code.dir/main.cpp.obj	dec7d25252915567
-333	436	6832250574756090	Problems_Leet_Code.exe	95364f8215614c75
+10	791	6834792438995235	CMakeFiles/Problems_Leet_Code.dir/main.cpp.obj	dec7d25252915567
+792	1253	6834792443572377	Problems_Leet_Code.exe	95364f8215614c75
+4	406	6834792569780812	CMakeFiles/Problems_Leet_Code.dir/main.cpp.obj	dec7d25252915567
+407	517	6834792570840631	Problems_Leet_Code.exe	95364f8215614c75
+4	416	6834792685656966	CMakeFiles/Problems_Leet_Code.dir/main.cpp.obj	dec7d25252915567
+417	530	6834792686754002	Problems_Leet_Code.exe	95364f8215614c75
+3	400	6834792788807777	CMakeFiles/Problems_Leet_Code.dir/main.cpp.obj	dec7d25252915567
+400	506	6834792789829300	Problems_Leet_Code.exe	95364f8215614c75
